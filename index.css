@@ -1,0 +1,10 @@
+body {
+    background-color: rgb(201, 94, 112);
+}
+
+section {
+    border-radius: 5px;
+    border-style: groove;
+    align-content: center;
+    display: inline-flexbox;
+}
