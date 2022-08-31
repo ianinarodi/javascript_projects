@@ -37,5 +37,9 @@ for (let i=0; i<=4; i++){
     precios[i]= precios[i] * 1.21;
 }
 
+<<<<<<< HEAD
 console.table(precios);
 
+=======
+console.table(precios);
+>>>>>>> master
