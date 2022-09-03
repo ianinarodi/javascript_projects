@@ -1,9 +1,9 @@
+function pedirNombre (){
+    let nombre  = prompt ("Ingrese su nombre") 
+      cursoNumero = Number(prompt("Hola " + nombre + " ! Ingresá el numero de curso que deseas comprar: "));
+}
 
-let nombre = prompt ("Ingrese su nombre") ;
-
-let cursoNumero, precio, descuento, pagar;
-
-cursoNumero = Number(prompt("Hola " + nombre + " ! Ingresá el numero de curso que deseas comprar: "));
+pedirNombre ();
 
 precio = Number(prompt("Ahora ingresá el precio del curso que elegiste"));
 
@@ -20,3 +20,15 @@ if (cursoNumero === 1) {
 } else if (cursoNumero === 3) {
      alert ("O pagalo en 12 cuotas sin interés de $4.875");
 }
+
+
+const recomendaciones = Number(prompt("¿A cuantas personas les recomendarias estos cursos?"));
+
+function ganasteDescuento () {
+     for (let i=1; i>= recomendaciones ; i++) {
+         continue;
+ }
+ console.log ("Tenés un descuento para tu próximo curso!")
+ }
+ 
+ ganasteDescuento();
