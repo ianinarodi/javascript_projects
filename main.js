@@ -56,4 +56,4 @@ const elegircategoria = prompt("Escriba la categoria a la que pertenece el libro
 const libroSeleccionado = librosdisponibles.filter(libros => libros.categoria === "Business"); 
 
 console.table(libroSeleccionado);
-alert("Tu libro seleccionado está disponible :)");
+alert("Tu libro seleccionado está disponible :D ");
