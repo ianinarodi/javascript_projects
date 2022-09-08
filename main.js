@@ -1,14 +1,8 @@
 let nombre = prompt ("Ingrese su nombre") ;
-
-let cursoNumero, precio, descuento, pagar;
-
-cursoNumero = Number(prompt("Hola " + nombre + " ! Ingresá el numero de curso que deseas comprar: "));
-
-precio = Number(prompt("Ahora ingresá el precio del curso que elegiste"));
-
-descuento = precio*10/100;
-
-pagar = precio-descuento;
+let cursoNumero = Number(prompt("Hola " + nombre + " ! Ingresá el numero de curso que deseas comprar: "));
+let precio = Number(prompt("Ahora ingresá el precio del curso que elegiste"));
+let descuento = precio*10/100;
+let pagar = precio-descuento;
 
 alert ("Tu total a pagar con descuento del 10% es: $" +  pagar);
 
@@ -20,26 +14,46 @@ if (cursoNumero === 1) {
      alert ("O pagalo en 12 cuotas sin interés de $4.875");
 }
 
-const productos= ["inglés para negocios", "inglés general","inglés para viajes","inglés exámenes internacionales "];
-const precios= [2500, 2000, 2800, 3000];
+const recomendaciones = Number(prompt("¿A cuantas personas les recomendarias estos cursos?"));
+function ganasteDescuento () {
+     for (let i=1; i>= recomendaciones ; i++) {
+         continue;
+ }
+ console.log ("Tenés un descuento para tu próximo curso!")
+ }
+ 
+ ganasteDescuento();
 
-console.table(productos);
-console.table(precios);
+ const librosdisponibles = [
+     {
+          titulo: "Ingles para negocios", 
+          precio:2500,
+          categoria: "Business",
+          id: 1,
+     },
+     {
+          titulo: "Ingles general",
+          precio:2000,
+          categoria:"general English",
+          id: 2,
+     },
+     {
+          titulo: "Ingles para viajes",
+          precio: 2800,
+          categoria:"travel",
+          id: 3,
+     },
+     {
+          titulo: "Ingles para examenes internacionales",
+          precio: 3000, 
+          categoria:"international exams",
+          id: 4,
+     }
+]
 
-productos.push("inglés para conversación");
-precios.push(2300);
+const elegircategoria = prompt("Escriba la categoria a la que pertenece el libro que quiere para obtener mas informacion");
 
-console.table(productos);
-console.table(precios);
+const libroSeleccionado = librosdisponibles.filter(libros => libros.categoria === "Business"); 
 
-
-for (let i=0; i<=4; i++){
-    precios[i]= precios[i] * 1.21;
-}
-
-<<<<<<< HEAD
-console.table(precios);
-
-=======
-console.table(precios);
->>>>>>> master
+console.table(libroSeleccionado);
+alert("Tu libro seleccionado está disponible :)");

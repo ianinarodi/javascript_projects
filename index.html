@@ -4,31 +4,125 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inicio Brainlingual</title>
     <link rel="stylesheet" href="./index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 </head>
 <body>
+
+ <!-- HEADER + BARRA DE NAVEGACION -->
+   <header>
+   <nav class="navbar navbar-expand-lg bg-light" >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">BRAINLINGUAL</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header> 
+
+<section class="elegirLibros" class="container-fluid">
+    <div class="row">
+      <article class="col-md-6">
+        <form class="row g-3">
+        <label for="">Elegí entre nuestros libros  para impulsar tus estudios de inglés con Brainligual</label>
+        <select name="">
+          <option value="">1. Grammar & Vocabulary - inglés para negocios</option>
+          <option value="">2. Grammar & Vocabulary - inglés general</option>
+          <option value="">3. Grammar & Vocabulary - inglés para viajes</option>
+          <option value="">4. Grammar & Vocabulary - inglés para exámenes internacionales</option>
+         </select>
+        <input type="submit" value="Calcular precio" />
+       </form>
+   </article>
+ </div>
+</section>
+
+
+<!-- CARDS CON INFO -->
+    <section class="cardCursos">
+        <div  class="row row-cols-1 row-cols-md-3 g-4"> 
+        <div class="card text-bg-danger m-5" style="max-width: 18rem;" class="col-sm-12 col-lg-4">
+            <div class="card-header">Curso n° 1 - Inglés general para nivel BEGINNER</div>
+            <div class="card-body">
+              <h5 class="card-title">$37.500 </h5>
+              <p class="card-text">Este es un curso para descagarte de forma online y aprender inglés con videos y actividades armados por nuestros profesores. Tiene un total del 10 modulos, con 5 secciones cada uno.
+                <h6>*(Pagalo con tarjeta en 12 cuotas sin interés, o en efectivo/transferencia y obtené el 10% de descuento.)</h6>
+              </p>
+            </div>
+          </div>
     
-    <section>
-        <h1>Curso n° 1 - Inglés general para nivel BEGINNER</h1>
-        <h2>$37.500</h2>
-        <h6>Pagalo con tarjeta en 12 cuotas sin interés, o en efectivo/transferencia y obtené el 10% de descuento.</h6>
-        <p>Este es un curso para descagarte de forma online y aprender inglés con videos y actividades armados por nuestros profesores. Tiene un total del 10 modulos, con 5 secciones cada uno.</p>
+          <div class="card text-bg-danger m-5" style="max-width: 18rem;" class="col-sm-12 col-lg-4">
+            <div class="card-header">Curso n° 2 - Inglés general para nivel INTERMEDIATE</div>
+            <div class="card-body">
+              <h5 class="card-title">$45.000</h5>
+              <p class="card-text">Este es un curso para descagarte de forma online y aprender inglés con videos y    actividades armados por nuestros profesores. Tiene un total del 10 modulos, con 5 secciones cada uno. 
+                <h6>*(Pagalo con tarjeta en 12 cuotas sin interés, o en efectivo/transferencia y obtené el 10% de descuento.)</h6>
+              </p>
+            </div>
+          </div>
+
+          <div class="card text-bg-danger m-5" style="max-width: 18rem;" class="col-sm-12 col-lg-4">
+            <div class="card-header">Curso n° 3 - Inglés general para nivel ADVANCED</div>
+            <div class="card-body">
+              <h5 class="card-title">$58.500</h5>
+              <p class="card-text">Este es un curso para descagarte de forma online y aprender inglés con videos y actividades armados por nuestros profesores. Tiene un total del 10 modulos, con 5 secciones cada uno.
+                Este es un curso para descagarte de forma online y aprender inglés con videos y actividades armados por nuestros profesores. Tiene un total del 10 modulos, con 5 secciones cada uno.
+                <h6>*(Pagalo con tarjeta en 12 cuotas sin interés, o en efectivo/transferencia y obtené el 10% de descuento.)</h6>
+              </p>
+            </div>
+          </div>
+        </div>
     </section>
 
-    <section>
-        <h1>Curso n° 2 - Inglés general para nivel INTERMEDIATE</h1>
-        <h2>$45.000</h2>
-        <h6>Pagalo con tarjeta en 12 cuotas sin interés, o en efectivo/transferencia y obtené el 10% de descuento.</h6>
-        <p>Este es un curso para descagarte de forma online y aprender inglés con videos y actividades armados por nuestros profesores. Tiene un total del 10 modulos, con 5 secciones cada uno.</p>
-    </section>
+   <!-- FOOTER -->
+  <footer class="p-3">
+    <div class="footer1">
+      <button class="botonesredes"> <a class="redes" href="https://instagram.com/brainlingual?igshid=YmMyMTA2M2Y="
+          target="blank"> <i class="bi bi-instagram fs-5"></i></a> </button>
+      <button class="botonesredes"> <a class="redes" href="https://www.facebook.com/ianina.rodi/" target="blank"> <i
+            class="bi bi-facebook fs-5"></i></a> </button>
+      <button class="botonesredes"> <a class="redes" href=# target="blank"> <i class="bi bi-whatsapp fs-5"></i></a>
+      </button>
+    </div>
+  </footer>
 
-    <section>
-        <h1>Curso n° 3 - Inglés general para nivel ADVANCED</h1>
-        <h2>$58.500</h2>
-        <h6>Pagalo con tarjeta en 12 cuotas sin interés, o en efectivo/transferencia y obtené el 10% de descuento.</h6>
-        <p>Este es un curso para descagarte de forma online y aprender inglés con videos y actividades armados por nuestros profesores. Tiene un total del 10 modulos, con 5 secciones cada uno.</p>
-    </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+  crossorigin="anonymous"></script>
+
 
 <script src="./main.js" ></script>
 </body>
