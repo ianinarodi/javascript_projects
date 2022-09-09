@@ -51,9 +51,35 @@ function ganasteDescuento () {
      }
 ]
 
-const elegircategoria = prompt("Escriba la categoria a la que pertenece el libro que quiere para obtener mas informacion");
+const elegirLibro = prompt("Escriba a continuacion el numero que corresponda al libro que desea: \n1. Ingles para negocios \n 2.Ingles general \n 3. Ingles para viajes \n 4. Ingles para examenes internacionales");
+
+if (elegirLibro === "1") {
+     alert("Elegiste Ingles para negocios")
+} else if(elegirLibro === "2") {
+     alert("Elegiste Ingles general ")
+ } else if(elegirLibro === "3"){
+     alert("Elegiste Ingles para viajes" )
+  } else if(elegirLibro === "4") {
+     alert("Elegiste Ingles para examenes internacionales ")
+} 
 
 const libroSeleccionado = librosdisponibles.filter(libros => libros.categoria === "Business"); 
-
 console.table(libroSeleccionado);
-alert("Tu libro seleccionado está disponible :D ");
+
+//INTERACCION CON HTML
+
+const texto1 = document.getElementById("primercard");
+
+console.log("primercard: " , texto1);
+console.log("primercard: " , texto1.innerText);
+
+const libroFinal = prompt("Volve a ingresar el numero de opcion elegida del 1 al 4")
+
+if (libroFinal === ("1"))  {
+     texto1.innerText = "¡Elegiste Ingles para negocios! ¡Felicitaciones por tu compra! 👏​💜​🥰​"
+}else if (libroFinal === ("2"))  {
+     texto1.innerText = "¡Elegiste Ingles general! ¡Felicitaciones por tu compra! 👏​💜​🥰​"
+}else if (libroFinal === ("3"))  {
+     texto1.innerText = "¡Elegiste Ingles para viajes! ¡Felicitaciones por tu compra! 👏​💜​🥰​"
+}else if (libroFinal === ("4"))  {
+     texto1.innerText = "¡Elegiste Ingles para examenes internacionales! ¡Felicitaciones por tu compra! 👏​💜​🥰​" }
