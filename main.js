@@ -69,6 +69,7 @@ console.table(libroSeleccionado);
 //INTERACCION CON HTML
 
 const texto1 = document.getElementById("primercard");
+const texto2 = document.getElementById("segundacard");
 
 console.log("primercard: " , texto1);
 console.log("primercard: " , texto1.innerText);
@@ -83,3 +84,10 @@ if (libroFinal === ("1"))  {
      texto1.innerText = "¡Elegiste Ingles para viajes! ¡Felicitaciones por tu compra! 👏​💜​🥰​"
 }else if (libroFinal === ("4"))  {
      texto1.innerText = "¡Elegiste Ingles para examenes internacionales! ¡Felicitaciones por tu compra! 👏​💜​🥰​" }
+
+
+
+ btn.onclick = () => console.log(" Estás cada vez mas cerca de comprar el libro que querés !!! ");
+
+const textBox = document.querySelector("#usuario");
+textBox.addEventListener("keydown", (e) => texto2.innerText = e.target.value);

@@ -63,12 +63,24 @@
           <option value="">3. Grammar & Vocabulary - inglés para viajes</option>
           <option value="">4. Grammar & Vocabulary - inglés para exámenes internacionales</option>
          </select>
-        <input type="submit" value="Calcular precio" />
+         <form action="">
+          <input type="button" id="btn" value="Calcular precio" onclick="hablar();">
+      </form>
        </form>
    </article>
  </div>
 </section>
 
+<form>
+  <div>
+    <label for="uname" >Nombre de usuario: </label>
+    <input type="text" id="usuario" name="name"
+           placeholder="Escriba aqui su nombre​">
+  </div>
+  <div>
+    <button>Enviar</button>
+  </div>
+</form>
 
 <!-- CARDS CON INFO -->
     <section class="cardCursos">
@@ -83,7 +95,7 @@
             </div>
           </div>
     
-          <div class="card text-bg-danger m-5" style="max-width: 18rem;" class="col-sm-12 col-lg-4">
+          <div id="segundacard" class="card text-bg-danger m-5" style="max-width: 18rem;" class="col-sm-12 col-lg-4">
             <div class="card-header">Curso n° 2 - Inglés general para nivel INTERMEDIATE</div>
             <div class="card-body">
               <h5 class="card-title">$45.000</h5>
