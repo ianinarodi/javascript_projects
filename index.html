@@ -50,13 +50,17 @@
     <label for="validationCustom01" class="form-label">Nombre de usuario</label>
     <input id="nombre" type="text" class="form-control" id="validationCustom01" required>
   </div>
+  <div class="col-md-4">
+    <label for="validationCustom01" class="form-label">Edad</label>
+    <input id="edad" type="number" class="form-control" id="validationCustom01" required>
+  </div>
   <div class="col-md-4" class="row">
     <label for="exampleInputEmail1" class="form-label">Dirección de Email</label>
     <input  id="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
   </div>
   <div class="col-md-4">
     <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
+    <input type="password" class="form-control" id="contraseña">
   </div>
   <div class="col-md-4 form-check">
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -71,6 +75,7 @@
     <thead class="thread-inverse">
       <tr>
         <td> Nombre Usuario:</td>
+        <td> Edad: </td>
         <td> Email: </td>
       </tr>
     </thead>
@@ -78,15 +83,15 @@
 </div>
 
 <!-- COMPRAR LIBROS -->
-<section  class="elegirLibros" class="container-fluid">
+<section  id=comprarLibrosOpciones class="container-fluid">
   <article class="col-md-6">
     <form action="/carrito.html" class="row g-3">
     <label for="">Elegí entre nuestros libros  para impulsar tus estudios de inglés con Brainligual</label>
-    <select name="">
-      <option value="">1.Inglés para negocios - $3500 - Business - Level Intermediate</option>
-      <option value="">2.Inglés general - $2500 - General English - Level Beginner</option>
-      <option value="">3.Inglés para viajes - $4500 - Travels - Level Intermediate</option>
-      <option value="">4.Inglés para exámenes internacionales - $5000 - Exams - Level Advanced</option>
+    <select id="libros" name="">
+      <option value="1. Inglés para negocios - $3500 - Business - Level Intermediate">1. Inglés para negocios - $3500 - Business - Level Intermediate</option>
+      <option value="2. Inglés general - $2500 - General English - Level Beginner">2. Inglés general - $2500 - General English - Level Beginner</option>
+      <option value="3. Inglés para viajes - $4500 - Travels - Level Intermediate">3. Inglés para viajes - $4500 - Travels - Level Intermediate</option>
+      <option value="4. Inglés para exámenes internacionales - $5000 - Exams - Level Advanced">4. Inglés para exámenes internacionales - $5000 - Exams - Level Advanced</option>
      </select>
      <form>
       <input type="button" id="btn" value="Agregar Libro al Carrito">
@@ -97,9 +102,13 @@
 
 
 <!-- LISTA DE LIBROS A COMPRAR o CARRITO-->
+<div id="resultado">
+
+</div>
 
 
-
+<br>
+<br>
 <!-- CARDS CON INFO -->
     <section class="cardCursos">
         <div  class="row row-cols-1 row-cols-md-3 g-4"> 

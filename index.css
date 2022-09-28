@@ -57,6 +57,7 @@ select {
     border-radius: 9px;
   }
 
+  /*ESTILOS PARA FORMULARIO Y SELECTOR DE LIBROS*/
   .elegirLibros {
    display: flex;
    position:relative;
@@ -81,7 +82,31 @@ select {
     margin-top: 20px;
   }
 
- 
+ #resultado {
+  border: 1px solid #912828;
+  border-radius: 5px;
+  padding: 17px;
+  position:relative;
+  display:block;
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 20px;
+ }
+
+ #comprarLibrosOpciones {
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  border: 1px solid #912828;
+  border-radius: 5px;
+  padding: 17px;
+  position:relative;
+  display:flex;
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 20px;
+ }
+
   /*TEXTO GENERAL*/
   .unite {
     transition: all 1s;
