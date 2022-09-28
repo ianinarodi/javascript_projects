@@ -39,7 +39,7 @@ function agregar(nuevoUsuario) {
 console.log(...baseDatosDeLs);
 }
 
-//OPCIONES DE LIBROS SELECCIONADOS VISIBLES EN UN DIV
+//OPCIONES DE LIBROS SELECCIONADOS VISIBLES EN  DIV
 const selectElement = document.getElementById('libros');
 selectElement.addEventListener('change', (event) => {
     const resultado = document.getElementById('resultado');
