@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html id="opening" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio Brainlingual</title> 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head>
+<body>
+
+ <!-- HEADER + BARRA DE NAVEGACION -->
+   <header>
+   <nav  class="navbar navbar-expand-lg" >
+    <div id="navprincipal" class="container-fluid">
+      <a class="navbar-brand" href="#">BRAINLINGUAL</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Productos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Libros en inglés</a></li>
+              <li><a class="dropdown-item" href="#">Clases de inglés online</a></li>    
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header> 
+
+<!-- FORMULARIO DE INICIO DE SESION -->
+<form id="formulario-usuario" class="formulario" class="container-fluid" class="col-sm-12 col-lg-4">
+  <div class="col-md-4">
+    <label for="validationCustom01" class="form-label">Nombre de usuario</label>
+    <input id="nombre" type="text" class="form-control" id="validationCustom01" required>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustom01" class="form-label">Edad</label>
+    <input id="edad" type="number" class="form-control" id="validationCustom01" required>
+  </div>
+  <div class="col-md-4" class="row">
+    <label for="exampleInputEmail1" class="form-label">Dirección de Email</label>
+    <input  id="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="col-md-4">
+    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="col-md-4 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Mantener sesión iniciada</label>
+  </div>
+  <button value="Registrar Usuario" id="botonRegistrarme" type="button" class="btn btn-success" >Registrarme</button> 
+</form>
+
+<!-- CUADRO CON USUARIOS REGISTRADOS Y SUS DATOS -->
+<div class="container">
+  <table class="table" id="tablaUsuario">
+    <thead class="thread-inverse">
+      <tr>
+        <td> Nombre Usuario:</td>
+        <td> Email: </td>
+      </tr>
+    </thead>
+  </table>
+</div>
+
+
+<!-- COMPRAR LIBROS -->
+<section  id=comprarLibrosOpciones class="container-fluid">
+  <article class="col-md-6">
+    <form action="/carrito.html" class="row g-3">
+    <label for="">Elegí entre nuestros libros  para impulsar tus estudios de inglés con Brainligual</label>
+    <select id="libros" name="">
+      <option value="1. Inglés para negocios - $3500 - Business - Level Intermediate">1. Inglés para negocios - $3500 - Business - Level Intermediate</option>
+      <option value="2. Inglés general - $2500 - General English - Level Beginner">2. Inglés general - $2500 - General English - Level Beginner</option>
+      <option value="3. Inglés para viajes - $4500 - Travels - Level Intermediate">3. Inglés para viajes - $4500 - Travels - Level Intermediate</option>
+      <option value="4. Inglés para exámenes internacionales - $5000 - Exams - Level Advanced">4. Inglés para exámenes internacionales - $5000 - Exams - Level Advanced</option>
+     </select>
+     <form>
+      <input type="button" id="btn" value="Agregar Libro al Carrito">
+  </form>
+   </form>
+</article>
+</section>
+
+
+<!-- LISTA DE LIBROS A COMPRAR o CARRITO-->
+<div id="resultado">
+</div>
+
+
+<br>
+<br>
+<!-- CARDS CON INFO -->
+    <section class="cardCursos">
+        <div  class="row row-cols-1 row-cols-md-3 g-4"> 
+        <div id="primercard" class="card text-bg-danger m-5" style="max-width: 18rem;" class="col-sm-12 col-lg-4">
+            <div class="card-header">Curso n° 1 - Inglés general para nivel BEGINNER</div>
+            <div class="card-body">
+              <h5 class="card-title">$37.500 </h5>
+              <p class="card-text">Este es un curso para descagarte de forma online y aprender inglés con videos y actividades armados por nuestros profesores. Tiene un total del 10 modulos, con 5 secciones cada uno.
+                <h6>*(Pagalo con tarjeta en 12 cuotas sin interés, o en efectivo/transferencia y obtené el 10% de descuento.)</h6>
+              </p>
+              <input  type="submit" class="btn btn-primary" value="Agregar Curso al Carrito" onclick=>
+            </div>
+          </div>
+    
+          <div id="segundacard" class="card text-bg-danger m-5" style="max-width: 18rem;" class="col-sm-12 col-lg-4">
+            <div class="card-header">Curso n° 2 - Inglés general para nivel INTERMEDIATE</div>
+            <div class="card-body">
+              <h5 class="card-title">$45.000</h5>
+              <p class="card-text">Este es un curso para descagarte de forma online y aprender inglés con videos y    actividades armados por nuestros profesores. Tiene un total del 10 modulos, con 5 secciones cada uno. 
+                <h6>*(Pagalo con tarjeta en 12 cuotas sin interés, o en efectivo/transferencia y obtené el 10% de descuento.)</h6>
+              </p>
+              <input type="button" class="btn btn-primary" value="Agregar Curso al Carrito" onclick=>
+            </div>
+          </div>
+
+          <div class="card text-bg-danger m-5" style="max-width: 18rem;" class="col-sm-12 col-lg-4">
+            <div class="card-header">Curso n° 3 - Inglés general para nivel ADVANCED</div>
+            <div class="card-body">
+              <h5 class="card-title">$58.500</h5>
+              <p class="card-text">Este es un curso para descagarte de forma online y aprender inglés con videos y actividades armados por nuestros profesores. Tiene un total del 10 modulos, con 5 secciones cada uno.
+                <h6>*(Pagalo con tarjeta en 12 cuotas sin interés, o en efectivo/transferencia y obtené el 10% de descuento.)</h6>
+              </p>
+              <input type="button" class="btn btn-primary" value="Agregar Curso al Carrito" onclick="sumar();">
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- TEXTO GENERAL -->
+    <div class="unite">
+      <section class="w-50 mx-auto text-center pt-5" id="textoenintro" class="col-sm-12 col-lg-12">
+        <h1 class="unitetitulo" class="p-3 fs-2 border-top border-3">Unite al equipo<span class="text-primary">
+            Brainlingual</span></h1>
+        <p class="unitetexto" class="fs-4  p-3"> Aprendé inglés de forma virtual con los mejores profesionales manejando
+          tus tiempos, o si sos profesor, compartí tus conocimientos con nuestra comunidad y trabajá desde donde quieras.
+        </p>
+      </section>
+    </div>
+
+   <!-- FOOTER -->
+  <footer class="p-3">
+    <div class="footer1">
+      <button class="botonesredes"> <a class="redes" href="https://instagram.com/brainlingual?igshid=YmMyMTA2M2Y="
+          target="blank"> <i class="bi bi-instagram fs-5"></i></a> </button>
+      <button class="botonesredes"> <a class="redes" href="https://www.facebook.com/ianina.rodi/" target="blank"> <i
+            class="bi bi-facebook fs-5"></i></a> </button>
+      <button class="botonesredes"> <a class="redes" href=# target="blank"> <i class="bi bi-whatsapp fs-5"></i></a>
+      </button>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./main.js" ></script>
+</body>
+</html>
