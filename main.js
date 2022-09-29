@@ -1,8 +1,7 @@
-//DOM
+//ARRAY DE USUARIOS REGISTRADOS
 let boton = document.getElementById('botonRegistrarme');
 boton.addEventListener("click", capturar);
 
-//ARRAY
 function capturar (){
      function Persona (nombre, edad, email, contraseña){
         this.nombre = nombre;
@@ -19,9 +18,9 @@ function capturar (){
   console.log(nuevoUsuario);
   agregar (nuevoUsuario);
 }
-
-//STORAGE Y JSON
+      
 let baseDatos = [];
+
 function agregar(nuevoUsuario) {
   let baseDatosDeLs = JSON.parse(localStorage.getItem('basedatosEJ')) 
   if (baseDatosDeLs == null) { 
@@ -34,12 +33,11 @@ function agregar(nuevoUsuario) {
         '<tbody><td>' + usuario.nombre + '</td><td>' + usuario.edad + '</td><td>' + usuario.email + '</td><tbody>' 
     })
     localStorage.setItem('basedatosEJ', JSON.stringify(baseDatosDeLs)) 
-    
 //SPREAD
 console.log(...baseDatosDeLs);
 }
 
-//OPCIONES DE LIBROS SELECCIONADOS VISIBLES EN  DIV
+//OPCIONES DE LIBROS SELECCIONADOS VISIBLES EN UN DIV
 const selectElement = document.getElementById('libros');
 selectElement.addEventListener('change', (event) => {
     const resultado = document.getElementById('resultado');
