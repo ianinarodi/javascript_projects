@@ -1,3 +1,4 @@
+
 //DOM
 let boton = document.getElementById('botonRegistrarme');
 boton.addEventListener("click", capturar);
