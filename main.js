@@ -81,3 +81,26 @@ Swal.fire({
     no-repeat  
   `})  
   )
+
+  //AJAX y FETCH
+  document.getElementById("jsonBtn").addEventListener("click", cargarJSON);
+
+  function cargarJSON (){
+    fetch("data.json")
+    .then(function(res){
+      return res.json();
+    })
+    .then(function(data){
+       let html = "";
+       data.forEach(function(data) {
+        html += `
+        <h2>${data.title} </h2>
+        <h5>${data.price} </h5>
+        <h5>${data.level} </h5>
+        <p>${data.body} </p>
+        <img src="${data.img}" />
+        `;
+       })
+       document.getElementById("resultado2").innerHTML =html;
+    })
+  }

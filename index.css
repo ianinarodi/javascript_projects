@@ -7,8 +7,24 @@
     border: none;
     outline: none;
   }
-  
+
+
   /* ESTILOS GENERALES EN BODY */
+  a#jsonBtn.button {
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: #531111;
+ font-size: 30px;
+ border-radius: 6px;
+ padding: 3px;
+ position: relative;
+ justify-content: center;
+background-color: #e9b4b4;
+justify-items: center;
+align-items: center;
+align-self: center;
+display: flex;
+  }
+
 body {
     font-family: sans-serif #ff6363;
     background-color: #fff1f1;
@@ -32,18 +48,18 @@ body {
   
 }
 
-/* ESTILOS EN CARDS */
-.cardCursos {
-   display: inline;
+/* ESTILOS EN CONTENEDORES PRODUCTOS */
+.cajaProductos  .cajaResultados {
+  border: 3px crimson;
+  padding: 4px;
+  display: flex;
    position:relative;
    justify-content: center;
    justify-items: center;
    align-items: center;
    align-self: center;
-   text-align: center;
-   padding: 10px;
-   padding-bottom: 50px;
 }
+
 
 select {
     margin-bottom: 10px;
